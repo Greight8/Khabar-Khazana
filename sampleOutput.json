@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+     "articles": [
+    {
+    "source": {
+    "id": "associated-press",
+    "name": "Associated Press"
+    },
+    "author": "Kim Chandler",
+    "title": "Alabama halts execution because of time, IV access concerns - The Associated Press - en Español",
+    "description": "ATMORE, Ala. (AP) — Alabama officials called off the Thursday lethal injection of a man convicted in a 1999 workplace shooting because of time concerns and trouble accessing the inmate’s veins. Alabama Corrections Commissioner John Hamm said the state halted …",
+    "url": "https://apnews.com/article/us-supreme-court-alabama-executions-d028c2d62f0e0fa919797030b06c30b0",
+    "urlToImage": "https://storage.googleapis.com/afs-prod/media/8bda13ea8f9c497db67d7610aa3afcc6/1992.jpeg",
+    "publishedAt": "2022-09-23T07:25:55Z",
+    "content": "ATMORE, Ala. (AP) Alabama officials called off the Thursday lethal injection of a man convicted in a 1999 workplace shooting because of time concerns and trouble accessing the inmates veins.\r\nAlabama… [+4898 chars]"
+    },
+    {
+    "source": {
+    "id": "reuters",
+    "name": "Reuters"
+    },
+    "author": null,
+    "title": "U.S. aircraft carrier arrives in South Korea as warning to North - Reuters",
+    "description": "A U.S. aircraft carrier arrived in South Korea on Friday for the first time in about four years, set to join other military vessels in a show of force intended to send a message to North Korea.",
+    "url": "https://www.reuters.com/world/us-aircraft-carrier-arrives-south-korea-warning-north-korea-2022-09-22/",
+    "urlToImage": "https://www.reuters.com/resizer/isyJ53l2Tnlcfd4pLav4wseNwI4=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/VMM5DZZ6CZN7FA6W6GGAFIW4TQ.jpg",
+    "publishedAt": "2022-09-23T07:18:00Z",
+    "content": "BUSAN, South Korea, Sept 23 (Reuters) - A U.S. aircraft carrier arrived in South Korea on Friday for the first time in about four years, set to join other military vessels in a show of force intended… [+3970 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "CBS Sports"
+    },
+    "author": "Bryan DeArdo",
+    "title": "Steelers vs. Browns score, takeaways: Nick Chubb, Amari Cooper power Cleveland past Pittsburgh - CBS Sports",
+    "description": "Cleveland's offensive duo shined on prime time",
+    "url": "https://www.cbssports.com/nfl/news/steelers-vs-browns-score-takeaways-nick-chubb-amari-cooper-power-cleveland-past-pittsburgh/live/",
+    "urlToImage": "https://sportshub.cbsistatic.com/i/r/2022/09/23/74b35def-9b2a-413a-832a-94afe0b59286/thumbnail/1200x675/380dc025d646683467a61559f83e2000/chubb-pitt.png",
+    "publishedAt": "2022-09-23T06:21:00Z",
+    "content": "Four days after their gut-wrenching loss, the Browns rebounded by defeating their longtime rivals at home on \"Thursday Night Football.\" Aided by Nick Chubb and a strong second half by their defense, … [+5932 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "Daily Beast"
+    },
+    "author": "Matt Young",
+    "title": "Trump Replies to New York AG Letitia James' Lawsuit on 'Hannity' - The Daily Beast",
+    "description": "In part two of his interview with Fox News host Sean Hannity, the former president went after the New York state attorney general.",
+    "url": "https://www.thedailybeast.com/donald-trump-replies-to-new-york-attorney-general-letitia-james-lawsuit-on-hannity",
+    "urlToImage": "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_743,w_1324,x_175,y_10/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1663909461/Screen_Shot_2022-09-23_at_12.20.34_PM_s4uq4s",
+    "publishedAt": "2022-09-23T05:51:06Z",
+    "content": "Former President Donald Trump has swung back at New York state Attorney General Letitia James, claiming that instead of targeting him in a massive fraud suit to the tune of $250 million, she should p… [+1012 chars]"
+    }
+    ]
+}

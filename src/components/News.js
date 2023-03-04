@@ -49,8 +49,8 @@ export default function News(props) {
 
         setPage(page + 1);
 
-        let response = await fetch(url);
-        let data = await response.json();
+        let response = await axios.get(url);
+        let data = await response.data;
         setArticles(articles.concat(data.articles));
         setTotalResults(data.totalResults);
     }
@@ -75,10 +75,8 @@ export default function News(props) {
                 <div className="container">
                     <div className="row">
                         {articles.map((element) => {
-                            return <div className="col-md-4" key={element.url} style={{
-                                height: "32rem"
-                            }} >
-                                <NewsItem title={element.title ? element.title.slice(0, 45) : "Read More to view"} description={element.description ? element.description.slice(0, 88) : "Read More to view"} imgUrl={element.urlToImage} newsUrl={element.url} author={element.author ? element.author : "unknown"} date={element.publishedAt ? element.publishedAt : "unknown"} source={element.source.name} mode={props.mode} />
+                            return <div className="col-md-4" key={element.url}>
+                                <NewsItem title={element.title ? element.title.slice(0, 45) : "Read More to view"} description={element.description ? element.description.slice(0, 88) : "Read More to view"} imgUrl={element.urlToImage ? element.urlToImage : "https://sportshub.cbsistatic.com/i/r/2022/09/23/74b35def-9b2a-413a-832a-94afe0b59286/thumbnail/1200x675/380dc025d646683467a61559f83e2000/chubb-pitt.png"} newsUrl={element.url} author={element.author ? element.author : "unknown"} date={element.publishedAt ? element.publishedAt : "unknown"} source={element.source.name} mode={props.mode} />
                             </div>
                         })}
                     </div>

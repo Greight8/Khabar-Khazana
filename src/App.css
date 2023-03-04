@@ -1,15 +1,10 @@
 .btn {
-    display: block;
-    position: absolute;
-    width: 7rem;
-    margin-left: 110px;
-    bottom: 12px;
+    position: relative;
+    width: 99px;
+    margin: auto;
+    font-size: 15px;
+    margin-top: 15px;
     border-radius: 36px;
-}
-
-.form-check {
-    right: 17px;
-    position: absolute
 }
 
 .card {
@@ -19,7 +14,3 @@
 .nav-link:hover {
     text-decoration: overline darkgreen;
 }
-
-/* .nav-item.active {
-    font-weight: bold;
-} */
