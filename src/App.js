@@ -2,7 +2,9 @@ import './App.css';
 import React, { useState } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
-import LoadingBar from 'react-top-loading-bar'
+import LoadingBar from 'react-top-loading-bar';
+import darkimg from './dark.jpg';
+import lightimg from './light.jpg';
 
 import {
   BrowserRouter as Router,
@@ -19,20 +21,20 @@ function App() {
   const [progress, setProgress] = useState(0)
 
   // seeting up dark-mode
-  const [switchTxt, setSwitchTxt] = useState("Dark Mode")
-
   const [mode, setMode] = useState("light");
+
+  const [img, setImg] = useState(darkimg)
 
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "rgb(17 24 39";
-      setSwitchTxt("Light Mode");
+      document.body.style.backgroundColor = "rgb(17 24 39)";
+      setImg(lightimg);
     }
     else {
       setMode("light");
       document.body.style.backgroundColor = "white";
-      setSwitchTxt("Dark Mode");
+      setImg(darkimg);
     }
   }
 
@@ -40,7 +42,7 @@ function App() {
     <>
       <Router>
         <div>
-          <Navbar title="Khabar Khazana" mode={mode} toggleMode={toggleMode} switchTxt={switchTxt} />
+          <Navbar title="Khabar Khazana" mode={mode} toggleMode={toggleMode} img={img} />
 
           <LoadingBar
             height={3}
@@ -51,42 +53,42 @@ function App() {
           <Routes>
 
             <Route exact path="/"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="general" pageSize={pageSize} country="in" category="general" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="general" pageSize={pageSize} country="us" category="general" />}
             />
 
 
             <Route exact path="/general"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="general" pageSize={pageSize} country="in" category="general" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="general" pageSize={pageSize} country="us" category="general" />}
             />
 
 
             <Route exact path="/sports"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="sports" pageSize={pageSize} country="in" category="sports" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="sports" pageSize={pageSize} country="us" category="sports" />}
             />
 
 
             <Route exact path="/business"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="business" pageSize={pageSize} country="in" category="business" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="business" pageSize={pageSize} country="us" category="business" />}
             />
 
 
             <Route exact path="/entertainment"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="entertainment" pageSize={pageSize} country="in" category="entertainment" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="entertainment" pageSize={pageSize} country="us" category="entertainment" />}
             />
 
 
             <Route exact path="/health"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="health" pageSize={pageSize} country="in" category="health" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="health" pageSize={pageSize} country="us" category="health" />}
             />
 
 
             <Route exact path="/science"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="science" pageSize={pageSize} country="in" category="science" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="science" pageSize={pageSize} country="us" category="science" />}
             />
 
 
             <Route exact path="/technology"
-              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="technology" pageSize={pageSize} country="in" category="technology" />}
+              element={<News mode={mode} apiKey={apiKey} setProgress={setProgress} key="technology" pageSize={pageSize} country="us" category="technology" />}
             />
 
           </Routes>

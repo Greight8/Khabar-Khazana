@@ -42,10 +42,11 @@ export default function Navbar(props) {
                         </li>
                     </ul>
                 </div>
-                <div className={`form-check form-switch text-${props.mode === "light" ? "dark" : "light"}`}>
-                    <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.switchTxt}</label>
-                </div>
+
+                <img src={props.img} onClick={props.toggleMode} alt=".." style={{
+                    width: "28px",
+                }} />
+
             </div>
         </nav>
     )
